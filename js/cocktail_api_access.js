@@ -8,7 +8,7 @@ API access functions
 */
 
 // API URL constant
-const API_URL = "http://localhost:5000/api/v1"   // since it's locally hosted for now, use localhost
+const API_URL = "http://rlannon-cocktails-api.herokuapp.com/api/v1"
 
 async function get_data(url)
 {
