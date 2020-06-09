@@ -55,10 +55,12 @@ body {
  */
 .masthead {
   margin-bottom: 2rem;
+  padding-bottom: 15%;
 }
 
 .masthead-brand {
   margin-bottom: 0;
+  padding-right:10vw; /* prevents the elements from being too close together */
 }
 
 .nav-masthead .nav-link {
@@ -92,18 +94,64 @@ body {
   }
 }
 
+/*
+ * modal
+ */
+
+.modal > * {
+  color: black;
+  text-shadow: none;
+}
+
+.modal a,
+.modal a:hover,
+.modal a:active,
+.modal a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
 
 /*
  * Cover
  */
 .cover {
   padding: 0 1.5rem;
+  padding-bottom: 5%;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
 
+.content {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/*
+
+Card content
+
+*/
+
+.card-header .btn,
+.card-header .btn:hover {
+  color:white;
+}
+
+.card {
+  background-color: black;
+  border: 0.05em solid gray;
+}
+
+.card-body .btn-primary:hover {
+  border: none;
+}
+
+.card-body .row .col {
+  margin: 1em;
+}
 
 /*
  * Footer

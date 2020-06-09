@@ -1,4 +1,4 @@
-<!-- music.html -->
+<!-- software.html -->
 
 <!doctype html>
 <html lang="en">
@@ -31,23 +31,78 @@
                     <h3 class="masthead-brand">Riley Lannon</h3>
                     <nav class="nav nav-masthead justify-content-end">
                         <a class="nav-link" href="index.html">Home</a>
-                        <a class="nav-link active" href="#">Music</a>
-                        <a class="nav-link" href="software.html">Software</a>
+                        <a class="nav-link" href="music.html">Music</a>
+                        <a class="nav-link active" href="#">Software</a>
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
                     </nav>
                 </div>
             </header>
 
             <main role="main" class="inner cover">
-                <h1 class="cover-heading">Original Compositions</h1>
+                <h1 class="cover-heading">My Pet Projects</h1>
                 
-                <div id="music-section" class="content">
-                    <p class="lead">With nearly a decade of experience in music composition and production, and nearly twice as much as a musician in general, I have studied music both independently and in an academic setting. Utilizing industry-standard software such as Ableton Live and Native Instruments Komplete, I have the ability to compose, produce, mix, and master all of my own tracks and even produce scores it.</p>
-                    <p class="lead">All of my completed scores are currently available free of charge through the International Music Score Library Project. While they are free to download (with sample recordings available), they are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Create Commons License.</a></p>
+                <div id="projects-section" class="content">
+                    <p class="lead">You can use a few of my pet projects here. They are all available on my <a href="https://github.com/rlannon" target="_blank">GitHub</a></p>
                 </div>
-                <p class="lead">
-                    <a class="btn btn-lg btn-primary" href="https://imslp.org/wiki/Category:Lannon,_Riley" target="_blank">Visit IMSLP</a>
-                </p>
+                <div id="accordion">
+                    <!-- Cocktails API -->
+                    <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" id="cocktails-heading">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#cocktails-collapse" href="#">Cocktails API</a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="collapse" id="cocktails-collapse">
+                            <div class="card-body">
+                                <p>Cocktials is a simple RESTful API to find cocktail recipes. Included in the project is a lookup tool that utilizes the API.</p>
+                                <a class="btn btn-primary" href="https://github.com/rlannon/cocktails" target="_blank">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6502 Projects -->
+                    <div class="card">
+                        <!-- card header -->
+                        <div class="card-header" id="6502-heading">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#6502-collapse">6502 Projects</button>
+                        </div>
+
+                        <!-- card content -->
+                        <div class="collapse" id="6502-collapse">
+                            <div class="card-body">
+                                <p>There are a few different 6502-related projects on my GitHub; one being a RESTful API to access information about the 6502 (instructions, facts, etc.), the other being an assembler and emulator. Both were done for projects in college classes.</p>
+                                <div class="row">
+                                    <a class="col btn btn-primary" href="https://github.com/rlannon/6502Emu" target="_blank">View 6502Emu on GitHub</a>
+                                    <a class="col btn btn-primary" href="https://github.com/rlannon/6502-API" target="_blank">View 6502 API on GitHub</a>
+                                    <a class="col btn btn-primary" href="https://rlannon.herokuapp.com">Access the API</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SIN language project -->
+                    <div class="card">
+                        <!-- header -->
+                        <div class="card-header" id="sin-heading">
+                            <button typ="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#sin-collapse">SIN Language</button>
+                        </div>
+
+                        <!-- content -->
+                        <div class="collapse" id="sin-collapse">
+                            <div class="card-body">
+                                <p>Spread across 3 repositories, the SIN Language project is my attempt at writing a compiler for a custom, procedural programming language. The project consists of the lexer, parser and code generator; the runtime library; and the standard library. Links to the repositories are given below.</p>
+                                <div class="row">
+                                    <a class="col btn btn-primary" href="https://github.com/rlannon/SINx86">Compiler</a>
+                                    <a class="col btn btn-primary" href="https://github.com/rlannon/SRE">Runtime</a>
+                                </div>
+                                <div class="row">
+                                    <a class="col btn btn-primary" href="https://github.com/rlannon/sinstdlib">Standard Library</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label" aria-hidden="true">
